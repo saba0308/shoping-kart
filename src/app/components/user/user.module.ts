@@ -25,7 +25,7 @@ import { TmAutocompleteModule } from '@tmlib/ui-sdk/autocomplete';
 import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
 import { LandingPageComponent } from './pages/landing-page/landing-page.component';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
-import {SnackbarModule} from 'ngx-snackbar';
+
 import { AddharDirective } from './addhar';
 @NgModule({
   declarations: [
@@ -38,7 +38,7 @@ import { AddharDirective } from './addhar';
     AddharDirective
   ],
   imports: [
-    CommonModule, HttpClientModule, NgbModule,SnackbarModule.forRoot(),
+    CommonModule, HttpClientModule, NgbModule,
     UserRoutingModule, TmLayoutModule, TmSidebarModule.forRoot(), SlickCarouselModule, TmUserModule, TmMenuModule, TmContextMenuModule,
     TmCardModule, FormsModule, ReactiveFormsModule, TmFormFieldModule, TmInputModule, TmButtonModule, TmSelectModule, TmBadgeModule, TmAutocompleteModule
   ],

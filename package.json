@@ -33,7 +33,6 @@
     "jquery": "^3.6.3",
     "ngx-slick-carousel": "^15.0.0",
     "ngx-slickjs": "^1.5.2",
-    "rxjs": "~7.5.0",
     "slick-carousel": "^1.8.1",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",

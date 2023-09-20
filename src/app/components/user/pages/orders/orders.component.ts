@@ -6,7 +6,6 @@ import { map } from 'rxjs/operators';
 import { productData } from 'src/app/components/model/product';
 import { CartService } from '../../services/cart/cart.service';
 import { cartData } from '../products/products.component';
-import { SnackbarService } from 'ngx-snackbar';
 import { TmDialogService } from '@tmlib/ui-sdk/dialog';
 
 @Component({
@@ -19,7 +18,7 @@ export class OrdersComponent implements OnInit {
   productData;
   productDetails: cartData;
   rallies$: Observable<any[]>;
-  constructor(private http: HttpClient, private snackbarService: SnackbarService, private dialogService: TmDialogService, private cartService: CartService, private toastrService: TmToastrService) { }
+  constructor(private http: HttpClient, private dialogService: TmDialogService, private cartService: CartService, private toastrService: TmToastrService) { }
   userData;
   ngOnInit(): void {
     this.userData = JSON.parse(localStorage.getItem('currentuser') || '{}');
