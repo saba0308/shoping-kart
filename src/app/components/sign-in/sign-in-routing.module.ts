@@ -6,10 +6,18 @@ import { SignUpComponent } from './sign-up/sign-up.component';
 
 const routes: Routes = [
 
-  { path: 'sign-up', component: SignUpComponent },
-  { path: 'log-in', component: LogInComponent },
-  { path: 'forgot-passsword', component: ForgotPasswordComponent},
-  { path: '**', component: LogInComponent },
+  { path: 'sign-up', component: SignUpComponent,data: {
+    title: 'Shoppingkart Sign up'
+  } },
+  { path: 'log-in', component: LogInComponent ,data: {
+    title: 'Shoppingkart  Sign In'
+  }},
+  { path: 'forgot-passsword', component: ForgotPasswordComponent,data: {
+    title: 'Password Recovery'
+  }},
+  { path: '**', component: LogInComponent ,data: {
+    title: 'Shoppingkart  Sign In'
+  }},
 
 ];
 

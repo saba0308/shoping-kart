@@ -18,3 +18,26 @@
 
     }
 }
+tm-card {
+    width: 400px;
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+
+    .userTableHeader {
+        position: absolute;
+        border-radius: 7px;
+        background: #3366ff;
+        color: white;
+        font-weight: 800;
+        width: 240px;
+        height: 40px;
+        padding: 8px;
+        text-align: center;
+        top: -20px;
+        left: 80px;
+        z-index: 1;
+
+    }
+}

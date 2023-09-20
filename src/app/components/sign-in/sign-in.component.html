@@ -1,20 +1,41 @@
 <tm-layout>
     <tm-layout-column>
-
-        <tm-card>
-            <div class="userTableHeader">
-                {{message}}
+        <div class="heading">
+            <img width="250px" height="120px" src="../../../assets/logo-1.png" alt="">
+            <!-- <div class="navBar">
+        <a (click)="openLogin(true)">Sign In</a>
+        <a > SignUp</a>
+   </div> -->
+            <div class="navBar">
+                <button *ngIf="hide" tmButton shape="round" (click)="login()" status="primary"> Login</button>
             </div>
-            <!-- <tm-route-tabset [tabs]="tabs" fullWidth>
 
-                </tm-route-tabset> -->
-            <tm-card-body>
-                <router-outlet></router-outlet>
-            </tm-card-body>
-
-
-
-        </tm-card>
-
+        </div>
+        <!-- <div class="backgroundImage">
+            <img src="../../../assets/shooping-Image.png" alt="">
+ </div>
+ <div class="cartImage">
+      <img src="../../../assets/cart-3d.png" alt="">
+ </div> -->
+        <div>
+            <div class="backgroundImageEcommerce">
+                <img src="../../../assets/5464026-removebg-preview.png" alt="">
+            </div>
+            <tm-card>     
+                <!-- form header -->
+                <div class="userTableHeader">
+                    {{message}}
+                </div>
+                <tm-card-body>
+                    <router-outlet></router-outlet>
+                </tm-card-body>
+            </tm-card>
+        </div>
+        <!-- <button tmButton (click)="openLogin(true)">Sign in</button> -->
+        <footer>
+            <h6>
+                Copyright © 2023 Shopping Kart All rights reserved.
+            </h6>
+        </footer>
     </tm-layout-column>
 </tm-layout>

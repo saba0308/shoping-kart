@@ -18,7 +18,7 @@ export class AuthGuard implements CanActivate {
           return true;      
           } 
         // navigate to login page as user is not authenticated      
-     this.router.navigate(['/auth/log-in']);      
+     this.router.navigate(['/auth/sign-in']);      
   return false; 
   }
   public isLoggedIn(): boolean {      
@@ -35,7 +35,7 @@ export class AuthGuard implements CanActivate {
     
     public isAdminLoggedIn(): boolean {      
       let status = false;      
-      if (localStorage.getItem('isAdminLoggedIn') == "true") {      
+      if (localStorage.getItem('isAdminLoggedIn') =="true") {      
          status = true;  
           
       }

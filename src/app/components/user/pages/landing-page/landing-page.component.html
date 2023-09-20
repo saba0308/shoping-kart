@@ -1,0 +1,64 @@
+<!-- carousel -->
+<ngb-carousel  class="carouselConatiner" >
+    <ng-template  ngbSlide *ngFor="let carousel of carouselData">
+      <div class="wrapper">
+        <img class="d-block w-100" [src]="carousel.carouselImage" alt="Random first slide">
+      </div>
+      <div class="carousel-caption">
+        
+      </div>
+    </ng-template>
+   
+  </ngb-carousel>
+<div class="slickContainer">
+    <img width="100%" src="../../../../../assets/pic-5.jpg" alt="">
+</div>
+<!-- category container -->
+<div class="slickContainer">
+   
+    <div class="imageContainer">
+        
+        <img src="../../../../../assets/productsImage/phone-4-removebg-preview.png" alt="errors">
+        <div class="sticker">
+            <h6>Electronics</h6>
+        </div>
+      
+    </div>
+    <div class="imageContainer">
+        
+        <img src="../../../../../assets/productsImage/fashion-removebg-preview.png" alt="errors">
+        <div class="sticker">
+            <h6>Fashion</h6>
+        </div>
+      
+    </div>
+    <div class="imageContainer">
+        
+        <img src="../../../../../assets/productsImage/kitchen.jpg" alt="errors">
+        <div class="sticker">
+            <h6>Kitchen</h6>
+        </div>
+      
+    </div>
+    <div class="imageContainer">
+        
+        <img src="../../../../../assets/productsImage/staples.jpg" alt="errors">
+        <div class="sticker">
+            <h6>Groceries</h6>
+        </div>
+      
+    </div>
+</div>
+<!-- slick-carousel -->
+
+  <ngx-slick-carousel class="carousel"
+  #slickModal="slick-carousel"
+  [config]="slideConfig" 
+  (init)="slickInit($event)"
+  (breakpoint)="breakpoint($event)"
+  (afterChange)="afterChange($event)"
+  (beforeChange)="beforeChange($event)">
+<div ngxSlickItem *ngFor="let slide of slides" class="slide">
+<img style="padding: 20px;" class="slideImage" src="{{ slide.img }}" alt="" width="100%">
+</div>
+</ngx-slick-carousel>

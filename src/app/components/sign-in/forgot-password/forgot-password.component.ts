@@ -121,7 +121,7 @@ export class ForgotPasswordComponent implements OnInit {
       this.show = true;
     }
 
-    this._http.get<any>("http://localhost:3000/usersData")
+    this._http.get<any>("https://template-json-server.vercel.app/api/usersData")
       .subscribe(res => {
         const user = res.find((a: any) => {
           if (a.email === this.signInForm.value.email)
@@ -157,9 +157,9 @@ export class ForgotPasswordComponent implements OnInit {
 
     this.apiService.update(this.id, this.passwordForm.value).subscribe((res: any) => {
       console.log('Post updated successfully!');
-      this.router.navigateByUrl('/auth/log-in');
+      this.router.navigateByUrl('/auth/sign-in');
     })
-    this.router.navigate(['/auth/log-in'])
+    this.router.navigate(['/auth/sign-in'])
   }
   get f(): { [key: string]: AbstractControl } {
     return this.signInForm.controls;

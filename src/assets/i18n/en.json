@@ -19,10 +19,13 @@
 		"layout.theme.corporate": "Corporate",
         "layout.align":"RTL",
         "sidebar.nav.dashboard":"Dashboard",
-        "sidebar.nav.users":"Users"
+        "sidebar.nav.users":"Users",
+        "sidebar.nav.products":"Products",
+        "sidebar.nav.order":"Order",
+        "sidebar.nav.userInterface":"User Interface"
 	},
     "dashboard":{
-          "card.title.booking":"Booking",
+          "card.title.booking":"Orders",
           "card.title.visits":"Website visits",
           "card.title.revenue":"Revenue",
           "card.title.users":"Users",

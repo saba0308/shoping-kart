@@ -115,6 +115,11 @@ $background-color: var(--header-background-color);
         height: 350px;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         border-radius: 10px;
+        
+       tm-card-body{
+        padding: 20px;
+        width: 300px;
+       }
     }
 
     .trafficCard {
@@ -122,7 +127,11 @@ $background-color: var(--header-background-color);
         height: 350px;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         border-radius: 10px;
-
+   
+        tm-card-body{
+            padding: 20px;
+            width: 500px;
+           }
     }
 
     .usersCard {
@@ -165,7 +174,7 @@ $background-color: var(--header-background-color);
     }
 }
 
-@media screen and (max-width: 600px) and (min-width:0px) {
+@media screen and (max-width: 600px) and (min-width:400px) {
     .container {
         .cardContainer {
             .itemCard {
@@ -176,5 +185,143 @@ $background-color: var(--header-background-color);
                 }
             }
         }
+        .trafficCard{
+         
+   
+            tm-card-body{
+                padding: 20px;
+                width: 400px;
+            }
+        }
+        
     }
+    
+}
+
+
+@media screen and (max-width: 400px) and (min-width:300px) {
+    .container {
+        .cardContainer {
+            .itemCard {
+                width: 100%;
+
+                .footer {
+                    left: 20%;
+                }
+            }
+        }
+        .trafficCard{
+         
+   
+            tm-card-body{
+                padding: 20px;
+                width: 300px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 300px) and (min-width:200px) {
+    .container {
+        .cardContainer {
+            .itemCard {
+                width: 100%;
+
+                .footer {
+                    left: 20%;
+                }
+            }
+        }
+        .trafficCard{
+         
+   
+            tm-card-body{
+                padding: 20px;
+                width: 250px;
+            }
+        }
+        .salesCard{
+            tm-card-body{
+                padding: 20px;
+                width: 250px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 200px) and (min-width:0px) {
+    .container {
+        .cardContainer {
+            .itemCard {
+                width: 100%;
+
+                .footer {
+                    left: 20%;
+                }
+            }
+        }
+        .trafficCard{
+         
+   
+            tm-card-body{
+                padding: 20px;
+                width:100%;
+            }
+        }
+        .salesCard{
+            tm-card-body{
+                padding: 20px;
+                width: 100%;
+            }
+        }
+    }
+}
+@media screen and (max-width:600px) and (min-width:0px) {
+    .usersCard{
+        tm-card-body{
+          table {
+            border: 0;
+          }
+        
+       
+          table thead {
+            border: none;
+            clip: rect(0 0 0 0);
+            height: 1px;
+            margin: -1px;
+            overflow: hidden;
+            padding: 0;
+            position: absolute;
+            width: 1px;
+          }
+          
+          table tr {
+            border-bottom: 3px solid #ddd;
+            display: block;
+            margin-bottom: .625em;
+          }
+          
+          table td {
+            border-bottom: 1px solid #ddd;
+            display: block;
+            font-size: .8em;
+            text-align: right;
+          }
+          
+          table td::before {
+            /*
+            * aria-label has no advantage, it won't be read inside a table
+            content: attr(aria-label);
+            */
+            content: attr(data-label);
+            float: left;
+            font-weight: bold;
+            text-transform: uppercase;
+          }
+          
+          table td:last-child {
+            border-bottom: 0;
+           
+            
+          }
+        }
+      }
 }

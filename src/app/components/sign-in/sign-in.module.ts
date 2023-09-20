@@ -17,14 +17,14 @@ import { TmToastrModule } from '@tmlib/ui-sdk/toastr';
 import { TmDialogModule } from '@tmlib/ui-sdk/dialog';
 import { TmCheckboxModule } from '@tmlib/ui-sdk/checkbox';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
-import { DialogAuthComponent } from './dialog-auth/dialog-auth.component';
+
 @NgModule({
   declarations: [
     SignInComponent,
     LogInComponent,
     SignUpComponent,
     ForgotPasswordComponent,
-    DialogAuthComponent
+
   ],
   imports: [
     CommonModule,

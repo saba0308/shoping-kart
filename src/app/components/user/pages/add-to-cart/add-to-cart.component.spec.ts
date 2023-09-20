@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DialogAuthComponent } from './dialog-auth.component';
+import { AddToCartComponent } from './add-to-cart.component';
 
-describe('DialogAuthComponent', () => {
-  let component: DialogAuthComponent;
-  let fixture: ComponentFixture<DialogAuthComponent>;
+describe('AddToCartComponent', () => {
+  let component: AddToCartComponent;
+  let fixture: ComponentFixture<AddToCartComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ DialogAuthComponent ]
+      declarations: [ AddToCartComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(DialogAuthComponent);
+    fixture = TestBed.createComponent(AddToCartComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

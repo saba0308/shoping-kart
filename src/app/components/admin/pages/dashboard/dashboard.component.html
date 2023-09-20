@@ -15,7 +15,7 @@
             </div>
             <div class="content">
                 <span class="contentTitle">{{'dashboard.card.title.booking'|translate}}</span>
-                <div>150</div>
+                <div>{{orderCount}}</div>
             </div>
             <hr>
             <div class="footer">
@@ -75,7 +75,7 @@
             </div>
             <div class="content">
                 <span class="contentTitle">{{'dashboard.card.title.revenue'|translate}}</span>
-                <div>$1,500</div>
+                <div>{{ totalRevenue |currency }}</div>
             </div>
             <hr>
             <div class="footer">
@@ -120,7 +120,7 @@
             </div>
             <div class="content">
                 <span class="contentTitle">{{'dashboard.card.title.users'|translate}}</span>
-                <div>1500</div>
+                <div>{{userCount}}</div>
             </div>
             <hr>
             <div class="footer">
@@ -147,7 +147,7 @@
     </tm-card>
     <tm-card class="trafficCard">
         <tm-card-body>
-            <canvasjs-chart [options]="userChart" [styles]="{width: '100%', height:'100%'}"></canvasjs-chart>
+            <canvasjs-chart [options]="userChart" [styles]="{width: '100%', height:'100%'}" ></canvasjs-chart>
         </tm-card-body>
     </tm-card>
     <tm-card class="usersCard">
@@ -161,21 +161,27 @@
             [tmSearchOption]="'hitSubmit'" [tmTotalPageCount]="10" [tmTotalRecords]="100"
             (tmGridSorting)="gridSorting($event)" (tmGridSearch)="gridSearch($event)"></tm-grid> -->
             <table>
+                <thead>
                 <tr>
-                    <th>User Name</th>
-                    <th>Email </th>
-                    <th>Phone Number</th>
-                    <th >Last Login</th>
-                    <th >Status</th>
+                   
+            
+                    <th scope="col">User Name</th>
+                    <th scope="col">Email </th>
+                    <th scope="col">Phone Number</th>
+                    <th scope="col">Last Login</th>
+                    <th scope="col" >Status</th>    
                 </tr>
+            </thead>
+            <tbody>
                 <tr *ngFor="let usersData of usersData">
-                    <td>{{usersData.userName}}</td>
-                    <td>{{usersData.email}}</td>
-                    <td>{{usersData.phoneNumber}}</td>
-                    <td>{{usersData.lastSeen | dateAgo}}</td>
-                    <td>{{usersData.status }}</td>
+                    <td scope="row" data-label="User Name">{{usersData.userName}}</td>
+                    <td scope="row" data-label="Email">{{usersData.email}}</td>
+                    <td scope="row" data-label="Phone Number">{{usersData.phoneNumber}}</td>
+                    <td scope="row" data-label="Last Login">{{usersData.lastSeen | dateAgo}}</td>
+                    <td scope="row" data-label="Status">{{usersData.status }}</td>
                   
                 </tr>
+            </tbody>
             </table>
 
         </tm-card-body>

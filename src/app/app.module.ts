@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule,Title } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TmThemeModule } from '@tmlib/ui-sdk';
@@ -23,22 +24,28 @@ import { TmUserModule } from '@tmlib/ui-sdk/user';
 import { AdminModule } from './components/admin/admin.module';
 import { DateAgoPipe } from './components/pipes/date-ago.pipe';
 import { SortPipe } from './components/pipes/sort.pipe';
+import { APP_BASE_HREF, CurrencyPipe } from '@angular/common';
+import {  EncryptPipe, DecryptPipe } from './components/pipes/encrypt-decrypt/encrypt-decrypt.pipe';
+import { config } from 'rxjs';
+import { TmIconsModule } from '@tmlib/ui-sdk/icons';
+import { AuthGuard } from './guards/auth.guard';
 
 @NgModule({
   declarations: [
     AppComponent,
+ 
 
     
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-   AdminModule.forRoot(),
+    AppRoutingModule,BrowserAnimationsModule,
+    AdminModule.forRoot(),
     TmLayoutModule,TmSidebarModule.forRoot(),
-    TmMenuModule,TmContextMenuModule,
+    TmMenuModule,TmContextMenuModule,TmDialogModule.forRoot(),TmToastrModule.forRoot(),TmIconsModule
   
   ],
-  providers: [],
+  providers: [Title,AuthGuard,EncryptPipe, DecryptPipe,CurrencyPipe],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

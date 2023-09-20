@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { CommonModule, CurrencyPipe } from '@angular/common';
 
 import { UserRoutingModule } from './user-routing.module';
 import { UserComponent } from './user.component';
@@ -16,17 +16,34 @@ import { TmInputModule } from '@tmlib/ui-sdk/input';
 import { TmButtonModule } from '@tmlib/ui-sdk/button';
 import { TmSelectModule } from '@tmlib/ui-sdk/select';
 import { ProductsComponent } from './pages/products/products.component';
+import { OrdersComponent } from './pages/orders/orders.component';
+import { TmBadgeModule } from '@tmlib/ui-sdk/badge';
+import { AddToCartComponent } from './pages/add-to-cart/add-to-cart.component';
 
+import { HttpClientModule } from '@angular/common/http';
+import { TmAutocompleteModule } from '@tmlib/ui-sdk/autocomplete';
+import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
+import { LandingPageComponent } from './pages/landing-page/landing-page.component';
+import { SlickCarouselModule } from 'ngx-slick-carousel';
+import {SnackbarModule} from 'ngx-snackbar';
+import { AddharDirective } from './addhar';
 @NgModule({
   declarations: [
     UserComponent,
     ProfileComponent,
-    ProductsComponent
+    ProductsComponent,
+    OrdersComponent,
+    AddToCartComponent,
+    LandingPageComponent,
+    AddharDirective
   ],
   imports: [
-    CommonModule,
-    UserRoutingModule, TmLayoutModule, TmSidebarModule.forRoot(), TmUserModule, TmMenuModule, TmContextMenuModule,
-    TmCardModule, FormsModule, ReactiveFormsModule, TmFormFieldModule, TmInputModule, TmButtonModule, TmSelectModule
+    CommonModule, HttpClientModule, NgbModule,SnackbarModule.forRoot(),
+    UserRoutingModule, TmLayoutModule, TmSidebarModule.forRoot(), SlickCarouselModule, TmUserModule, TmMenuModule, TmContextMenuModule,
+    TmCardModule, FormsModule, ReactiveFormsModule, TmFormFieldModule, TmInputModule, TmButtonModule, TmSelectModule, TmBadgeModule, TmAutocompleteModule
+  ],
+  providers: [
+    CurrencyPipe
   ]
 })
 export class UserModule { }
