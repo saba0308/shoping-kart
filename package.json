@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --configuration development production",
+    "build": "ng build --configuration production",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
@@ -28,14 +28,15 @@
     "ag-grid-angular": "^29.0.0",
     "ag-grid-community": "^29.0.0",
     "bootstrap": "^5.2.3",
+    "json-server": "^0.17.1",
     "crypto-js": "^4.1.1",
     "jquery": "^3.6.3",
-    "json-server": "^0.17.1",
     "ngx-slick-carousel": "^15.0.0",
     "ngx-slickjs": "^1.5.2",
     "ngx-snackbar": "^2.0.1",
     "rxjs": "~7.5.0",
     "slick-carousel": "^1.8.1",
+    "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
   },
@@ -51,7 +52,6 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.0.0",
-    "typescript": "~4.7.2",
-    "webpack": "^5.75.0"
+    "typescript": "~4.7.2"
   }
 }
