@@ -1,0 +1,24 @@
+tm-card{
+    tm-card-body{
+        display: flex;
+        .imageContainer{
+            width:200px;
+            padding: 10px;
+        img{
+            width:100px;
+            height:100px;
+        }
+       
+        }
+        .detailsContainer{
+            width:600px;
+            padding: 20px;
+   
+        }
+    }
+    tm-card-footer{
+        display: flex;
+        justify-content: center;
+    }
+}
+

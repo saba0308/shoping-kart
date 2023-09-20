@@ -1,0 +1,17 @@
+
+<tm-card size="tiny" *ngFor="let product of products">
+    <tm-card-body>
+        <div class="imageContainer">
+            <img src="{{product.image}}" alt="">
+        </div>
+        <div class="detailsContainer">
+             <div> <span>Name:</span>{{product.name}}</div>
+             <div> <span>Price:</span>{{product.price}}</div>
+             <div> <span>Description:</span>{{product.description}}</div>
+        </div>
+    </tm-card-body>
+    <tm-card-footer>
+        <button tmButton status="primary">Buy Now </button>    
+     </tm-card-footer>
+  </tm-card>
+

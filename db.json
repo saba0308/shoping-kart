@@ -1,0 +1,178 @@
+{
+  "usersData": [
+    {
+      "id": 1,
+      "userName": "Bessie",
+      "email": "bessie12@gmail.com",
+      "phoneNumber": "(808) 555-0111",
+      "password": "admin@123",
+      "lastSeen": "2023-02-02T13:41:22.134Z",
+      "status": "offline"
+    },
+    {
+      "id": 2,
+      "userName": "Flores Juanita",
+      "email": "floresjuanita@gmail.com",
+      "phoneNumber": "(239) 555-0108",
+      "password": "admin@123",
+      "status": "offline"
+    },
+    {
+      "id": 3,
+      "userName": "Cooper  Kristin",
+      "email": "cooper1293@gmail.com",
+      "phoneNumber": "(225) 555-0118",
+      "password": "admin@123",
+      "status": "offline"
+    },
+    {
+      "id": 4,
+      "userName": "Leslie Alexander",
+      "email": "lesliealexander@gmail.com",
+      "phoneNumber": "(252) 555-0126",
+      "password": "admin@123",
+      "lastSeen": "2023-01-31T10:40:26.827Z",
+      "status": "offline"
+    },
+    {
+      "id": 5,
+      "userName": "Henry Arthur",
+      "email": "henryarthur@gmail.com",
+      "phoneNumber": "(219) 555-0114",
+      "password": "admin@123",
+      "lastSeen": "2023-01-31T10:40:26.827Z",
+      "status": "offline"
+    },
+    {
+      "id": 6,
+      "userName": "Jane Sam",
+      "email": "jansam24@yahoo.com",
+      "phoneNumber": "(209) 555-0104",
+      "password": "admin@123",
+      "lastSeen": "2023-01-31T10:40:26.827Z",
+      "status": "offline"
+    },
+    {
+      "id": 7,
+      "userName": "Black Marvin",
+      "email": "blackmarvin@yahoo.com",
+      "phoneNumber": "(308) 555-0121",
+      "password": "admin@123",
+      "lastSeen": "2023-01-31T10:40:26.827Z",
+      "status": "offline"
+    },
+    {
+      "id": 8,
+      "userName": "Claire",
+      "email": "claire1990@gmail.com",
+      "phoneNumber": "(603) 555-0123",
+      "password": "admin@123",
+      "lastSeen": "2023-01-31T10:40:26.827Z",
+      "status": "offline"
+    },
+    {
+      "id": 9,
+      "userName": "Miles Esther sd",
+      "email": "milesesther@gmail.com",
+      "phoneNumber": "(808) 555-0111",
+      "password": "admin@123",
+      "gender": "female",
+      "lastSeen": "2023-01-31T10:40:26.827Z",
+      "status": "offline"
+    },
+    {
+      "id": 10,
+      "userName": "Cameron Williamsonm",
+      "email": "cameron1994@gmail.com",
+      "phoneNumber": "(316) 555-0116",
+      "password": "admin@123",
+      "gender": "male",
+      "lastSeen": "2023-01-31T11:57:57.164Z",
+      "status": "offline"
+    },
+    {
+      "id": 11,
+      "userName": "Saba",
+      "email": "sabapathi.p@techmango.net",
+      "phoneNumber": "(316) 555-0116",
+      "password": "Saba@0308",
+      "lastSeen": "2023-02-03T04:51:58.739Z",
+      "gender": null,
+      "address": null,
+      "status": "online"
+    },
+    {
+      "userName": "adhi",
+      "email": "adhi123@gmail.com",
+      "phoneNumber": "8996131276",
+      "password": "Adhi@123",
+      "agree": true,
+      "id": 12,
+      "gender": "male",
+      "address": null,
+      "lastSeen": "2023-01-31T13:42:26.827Z",
+      "status": "offline"
+    },
+    {
+      "userName": "maruthu",
+      "email": "maruthu123@gmail.com",
+      "phoneNumber": "9043678475",
+      "password": "maruthu123@",
+      "agree": true,
+      "id": 13,
+      "lastSeen": "2023-01-31T13:43:26.827Z",
+      "status": "offline"
+    },
+    {
+      "userName": "edwin",
+      "email": "edwin123@gmail.com",
+      "phoneNumber": "09263728522",
+      "password": "rwgqh5661",
+      "agree": true,
+      "id": 14,
+      "lastSeen": "2023-01-31T13:44:26.827Z",
+      "status": "offline"
+    },
+    {
+      "userName": "user",
+      "email": "user134@gmail.com",
+      "phoneNumber": "9024695709",
+      "password": "123456",
+      "agree": true,
+      "id": 15,
+      "lastSeen": "2023-01-31T10:40:26.827Z",
+      "status": "offline"
+    },
+    {
+      "userName": "user123",
+      "email": "user123@gmail.com",
+      "phoneNumber": "8945725473",
+      "password": "133545",
+      "agree": true,
+      "id": 16,
+      "lastSeen": "2023-01-31T10:40:26.827Z",
+      "status": "offline"
+    },
+    {
+      "userName": "user12133",
+      "email": "user1423467122@gmail.com",
+      "phoneNumber": "327546735765",
+      "password": "123456",
+      "agree": true,
+      "id": 17,
+      "confirmPassword": "123456",
+      "lastSeen": "2023-01-31T10:40:26.827Z",
+      "status": "offline"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
